@@ -3,19 +3,7 @@ import path from 'path'
 
 export default defineConfig({
   root: '',
-  base: '/',
-  build: {
-    rollupOptions: {
-      input: {
-        main: './index.html',
-        blog: './movie.html',
-        contacts: './movies.html',
-        news: './show.html',
-        podcasts: './subscriptions.html',
-        resources: './support.html',
-      }
-    }
-  },
+  base: '/Stream-Vibe/',
   public: 'public',
   out: 'dist',
   assets: {
