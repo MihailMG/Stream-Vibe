@@ -4,6 +4,18 @@ import path from 'path'
 export default defineConfig({
   root: '',
   base: '/',
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        blog: './movie.html',
+        contacts: './movies.html',
+        news: './show.html',
+        podcasts: './subscriptions.html',
+        resources: './support.html',
+      }
+    }
+  },
   public: 'public',
   out: 'dist',
   assets: {
